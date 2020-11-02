@@ -4,7 +4,7 @@
 
 #### Fetching data from Recipe Search API.
 #### Search any recipe.
-#### Check Health Labels,Total Weight ,Cautions,Diet Labels.
+#### Check Calories, Health Labels,Total Weight, Cautions, Diet Labels.
 
  
 
