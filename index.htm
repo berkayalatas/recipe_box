@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recipe Box</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="assets/img/Recipe Box.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+
+      
+img {
+  max-width: 100%;
+  width: 300px;
+  height: 260px;
+  vertical-align: bottom;
+}
+
+.recipe-card {
+  width: 100%;
+  height: 600px;
+  padding: 5px;
+  margin: 30px 30px;
+  max-width: 350px;
+  max-height: 650px;
+}
+
+@media all and (max-width:770px) {
+
+  /* card */
+  img {
+      position: relative;
+      right: 1px;
+      max-width: 100%;
+      height: 80%;
+  }
+
+  .recipe-card {
+      background: #fff;
+      margin: 4.2em auto;
+      width: 100%;
+      height: 600px;
+      margin: 30px 15px;
+      max-width: 330px;
+      max-height: 600px;
+  }
+
+  .logo_container img {
+    width: 150px !important;
+    margin-top: 10px !important;
+    padding: 10px !important;
+}
+}
+
+ </style>
+
+  </head>
+  <body>
+        <!-- nav -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.htm">
+          Recipe Box</a>
+       </nav>  
+    <!-- end of nav -->
+
+
+    <section id="#home">
+      <div class="card_container">
+        <!--Header-->
+
+        <div class="logo_container" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+          <a href="index.htm">
+            <img src="assets/img/Recipe Box.svg" alt="">
+          </a>
+          
+        </div>
+        <!--Form Input-->
+        <form class="form">
+          <input type="text" class="form__field" placeholder="Search Any Recipe..." />
+          <button type="button" class="btn btn--primary btn--inside uppercase">Search</button>
+        </form>
+        
+        <!--Data from API-->
+        <div class="search-result" >
+          <!--Card 1-->
+          <div class="recipe-card" data-aos="fade-in">
+
+            <aside>
+          
+              <img src="https://images.unsplash.com/photo-1598023696416-0193a0bcd302?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1107&q=80" alt="pizza" />
+          
+              <a href="https://www.walksofitaly.com/blog/food-and-wine/italian-pizza-dough-recipe"  target="_blank"
+               class="button"><span class="icon icon-play"></span></a>
+          
+            </aside>
+          
+            <article>
+          
+              <h2>Italian Pizza</h2>
+              <h3>Dinner</h3>
+          
+              <ul>
+                <li><span class="icon icon-users"></span><span>2</span></li>
+                <li><span class="icon icon-clock"></span><span>45 min</span></li>
+                <li><span class="icon icon-calories"></span><span>197</span></li>
+              </ul>
+          
+              <p class="ingredients"> <span>Ingredients:&nbsp;</span> <br>
+                600 mL of warm water
+                7 cups (1kg) flour
+                2.5 – 3 tablespoons (25 grams) of fresh yeast or 2 teaspoons of dried yeast.
+                6 tablespoons of extra virgin olive oil
+                1.5 teaspoons salt
+                2 teaspoons sugar
+            </p>
+          
+              <p class="ingredients"><span>Health labels: :&nbsp;</span>
+                Calories: 260
+                Carbs: 34 Fat: 11 Sodium: 550 Protein: 13
+                
+                </p>
+          
+            </article>
+          
+          </div>
+      
+      
+          <!--Card 2-->
+          <div class="recipe-card" data-aos="fade-in">
+
+            <aside>
+          
+              <img src="https://images.unsplash.com/photo-1534790566855-4cb788d389ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Cheese Burger" />
+          
+              <a href="https://www.allrecipes.com/recipe/72657/best-hamburger-ever/" target="_blank" class="button"><span class="icon icon-play"></span></a>
+          
+            </aside>
+          
+            <article>
+          
+              <h2>Cheese Burger </h2>
+              <h3>Dinner</h3>
+          
+              <ul>
+                <li><span class="icon icon-users"></span><span>1</span></li>
+                <li><span class="icon icon-clock"></span><span>20 min</span></li>
+                <li><span class="icon icon-calories"></span><span>445</span></li>
+              </ul>
+          
+              <p class="ingredients"> <span>Ingredients:&nbsp;</span> <br>
+                1 pounds lean ground beef
+                ½ onion, finely chopped
+                ½ cup shredded Colby Jack or Cheddar cheese
+                1 teaspoon soy sauce & Worcestershire sauce
+                1 egg
+                1 envelope dry onion soup mix
+                1 clove garlic
+                salt and pepper to taste 
+            </p>
+          
+            <p class="ingredients"><span>Health labels: :&nbsp;</span>protein 39g 78% DV; carbohydrates 8.8g 3% DV; fat 27.5g 42% DV; cholesterol 173.6mg</p>
+          
+            </article>
+          
+          </div>
+      
+      
+      
+           <!--Card 3-->
+           <div class="recipe-card" data-aos="fade-in">
+
+            <aside>
+          
+              <img src="https://images.unsplash.com/photo-1591798454113-023d7379221f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Spaghetti" />
+          
+              <a href="https://www.allrecipes.com/recipe/11715/easy-spaghetti-with-tomato-sauce/"
+              target="_blank" class="button"><span class="icon icon-play"></span></a>
+          
+            </aside>
+          
+            <article>
+          
+              <h2>Spaghetti with Tomato Sauce</h2>
+              <h3>Dinner</h3>
+          
+              <ul>
+                <li><span class="icon icon-users"></span><span>1</span></li>
+                <li><span class="icon icon-clock"></span><span>30 min</span></li>
+                <li><span class="icon icon-calories"></span><span>557</span></li>
+              </ul>
+                    
+              <p class="ingredients"><span>Ingredients:&nbsp;</span> <br>
+                  12 ounces spaghetti
+                  1 pound lean ground beef
+                  1 teaspoon salt
+                  1 teaspoon dried oregano
+                  ¼ teaspoon ground black pepper
+                  ⅛ teaspoon garlic powder
+                  2 tablespoons dried minced onion
+                  2 ½ cups chopped tomatoes
+                  1 ⅓ (6 ounce) cans tomato paste
+              </p>  
+
+              <p class="ingredients"><span>Health labels: :&nbsp;</span>
+              protein 39g 78% DV; carbohydrates 8.8g 3% DV;
+              fat 27.5g cholesterol 173.6mg 58% DV;</p>
+          
+            </article>
+          
+          </div>
+
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: false,
+    });
+  </script>
+  </body>
+</html>
